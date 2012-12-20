@@ -1,4 +1,3 @@
-
 <?php
 
 //error_reporting(E_ALL);
@@ -23,29 +22,26 @@ $mail->SMTPAuth   = true;                  // enable SMTP authentication
 $mail->SMTPSecure = "ssl";                 // sets the prefix to the servier
 $mail->Host       = "smtp.gmail.com";      // sets GMAIL as the SMTP server
 $mail->Port       = 465;                   // set the SMTP port for the GMAIL server
-$mail->Username   = "hsmaliya15888@gmail.com";  // GMAIL username
-$mail->Password   = "harishankar";            // GMAIL password
+$mail->Username   = "xxxxxxxxx@gmail.com";  // GMAIL username
+$mail->Password   = "xxxxxxxxxxx";            // GMAIL password
 
-$mail->SetFrom('hsmaliya15888@gmail.com', 'Easy Reminder');
+$mail->SetFrom('xxxxxxx@gmail.com', 'Easy Reminder');
 
-$rpl_email = $_POST['email'];
+$rpl_email ="xxxxxx@gmail.com" // replay email
 
-$mail->AddReplyTo($rpl_email,"Easy Reminder");
+$mail->AddReplyTo($rpl_email,"your blog name");
 
-$mail->Subject    = "One query arrived";
+$mail->Subject    = "yor subject massage";
 
 //$mail->AltBody    = ""; // optional, comment out and test
 
-$body = "
-$subject<br>
-Quetion:$Question
-";
+$body = " This is your email body , you want to write any this in block ";
 
 $mail->MsgHTML($body);
 
-$address = "hsmaliya15888@gmail.com";
+$address = "xxxxxxxxxx@gmail.com"; // send email (type here email address you want to send emial )
 
-$mail->AddAddress($address, $model->email);
+$mail->AddAddress($address, $rpl_email);
 
 
 

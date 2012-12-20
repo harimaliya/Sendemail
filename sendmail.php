@@ -44,18 +44,8 @@ $address = "xxxxxxxxxx@gmail.com"; // send email (type here email address you wa
 $mail->AddAddress($address, $rpl_email);
 
 
-
-//$mail->AddAttachment("images/phpmailer.gif");      // attachment
-//$mail->AddAttachment("images/phpmailer_mini.gif"); // attachment
-
-/*if(!$mail->Send()) {
-  echo "Mailer Error: " . $mail->ErrorInfo;
-} else {
-  echo "Message sent!";
-}*/
-
 if($mail->Send()) {
- // echo "Your query submitted successfully !!!";
+ echo "Your query submitted successfully !!!";
 }
 
 ?>

@@ -27,7 +27,7 @@ $mail->Password   = "xxxxxxxxxxx";            // GMAIL password
 
 $mail->SetFrom('xxxxxxx@gmail.com', 'Easy Reminder');
 
-$rpl_email ="xxxxxx@gmail.com" // replay email
+$rpl_email ="xxxxxx@gmail.com"; // replay email
 
 $mail->AddReplyTo($rpl_email,"your blog name");
 
